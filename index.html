@@ -13,85 +13,86 @@
 	<header>
 		<nav>
 			<ul>
-				<li><a href="">HOME</a></li>
-				<li><a href="">ABOUT</a></li>
-				<li><a href="">WORK</a></li>
-				<li><a href="">CONTACT</a></li>
+				<li><a href="#About">ABOUT</a></li>
+				<li><a href="#Work">WORK</a></li>
+				<li><a href="#Contact">CONTACT</a></li>
 			</ul>
 		</nav>
 		<section class="intro">
-			<div>
+			<div class="myName">
 				<h1>JULIAN MURATORI</h1>
 			</div>
 
-			<div class="aboutme">
-				<div>
+			<div class="aboutMe" id="About">
+				<div class="aboutMe__Text divBack">
 					<h2>ABOUT ME</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat consequatur excepturi, molestiae sit ratione aut sunt quas eveniet, ex natus perferendis a facilis nisi, velit quibusdam, alias placeat beatae unde.</p>
+					<p>Hi, I'm Julian. I'm a Front-End Web Developer and HackerYou grad based in Toronto, ON.</p>
+					<p>With a passion for collaboration and clean code, I approach every new project with an open mind and a strong, well-organized work ethic.</p>
+					<p>I love to learn new things, spread my own knowledge with others, and am a fierce believer in the idea that working cooperatively can teach me something new every day.</p>
 				</div>
-				<div><img src="http://unsplash.it/300/300" alt=""></div>
+				<div class="aboutMe__Photo"><img src="public/assets/coolportrait1.jpg" alt=""></div>
 			</div>
 		</section>
 	</header>
 
 	<main>
 		<section class="skills">
-			<div>
+			<div class="skills__Container divBack">
 				<div><i class="devicon-nodejs-plain"></i></div>
 				<div>
 					<p>Node.js</p>
 				</div>
 			</div>
-			<div>
+			<div class="skills__Container divBack">
 				<div><i class="devicon-sass-original"></i>
 			</div>
 				<div>
-					<p>SASS</p>
+					<p>Sass</p>
 				</div>
 			</div>
-			<div>
+			<div class="skills__Container divBack">
 				<div><i class="devicon-react-original"></i>
 			</div>
 				<div>
-					<p>React JS</p>
+					<p>React</p>
 				</div>
 			</div>
-			<div>
+			<div class="skills__Container divBack">
 				<div><i class="devicon-javascript-plain"></i>
 			</div>
 				<div>
 					<p>Javascript</p>
 				</div>
 			</div>
-			<div>
+			<div class="skills__Container divBack">
 				<div><i class="devicon-jquery-plain-wordmark"></i>
 			</div>
 				<div>
-					<p>JQuery</p>
+					<p>jQuery</p>
 				</div>
 			</div>
-			<div>
+			<div class="skills__Container divBack">
 				<div><i class="devicon-html5-plain"></i>
 			</div>
 				<div>
 					<p>HTML5</p>
 				</div>
 			</div>
-			<div>
+			<div class="skills__Container divBack">
 				<div><i class="devicon-git-plain"></i>
 			</div>
 				<div>
 					<p>Git</p>
 				</div>
 			</div>
-			<div>
+			<div class="skills__Container divBack">
 				<div><i class="devicon-gulp-plain"></i>
 			</div>
 				<div>
 					<p>Gulp</p>
 				</div>
 			</div>
-			<div>
+			<div class="skills__Container divBack">
 				<div><i class="devicon-css3-plain"></i>
 			</div>
 				<div>
@@ -100,67 +101,207 @@
 			</div>
 		</section>
 
-		<section class="portfolio">
-			<div>
-				<div>
-					<img src="http://unsplash.it/400/200" alt="">
-				</div>
+		<section class="portfolio" id="Work">
+			<div class="portfolio__Container">
+					<div class="portfolio__Cell--ImageContainer">
+						<img src="./public/assets/modern1.jpg" alt="" class="portfolio__Cell--Image">
+					</div>
+						<div class='portfolio__Cell--Text textRight divBack'>
+							<h3>We Are Modern</h3>
+							<p>We Are Modern is a single page PSD to HTML5/CSS3 conversion meant to showcase skills in responsiveness and design replication</p>
+							<div class="portfolio__Cell--Icons">
+							<div>
+								<i class="devicon-gulp-plain"></i>
+								<div>
+									<p>Gulp</p>
+								</div>
+							</div>
+							<div>
+								<i class="devicon-css3-plain"></i>
+								<div>
+									<p>CSS</p>
+								</div>
+							</div>
+							<div>
+								<i class="devicon-html5-plain"></i>
+								<div>
+									<p>HTML5</p>
+								</div>
+							</div>
+							<div>
+								<i class="devicon-sass-original"></i>
+								<div>
+									<p>Sass</p>
+								</div>
+							</div>
+							</div>
+							<div class="portfolio__Cell--Link">
+								<a href="http://projecttwo.julianmuratori.com">LIVE DEMO</a>
+							</div>	
+						</div>
 				
-				<div>
-					<div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem exercitationem ratione quae incidunt inventore consequuntur unde perferendis, repudiandae adipisci libero, praesentium fugiat vel fugit totam eos atque, error natus molestias!</p></div>
-					<div><i></i></div>
-				</div>
 			</div>
-			<div>
-				<div>
-					<img src="http://unsplash.it/400/200" alt="">
-				</div>
-				
-				<div>
-					<div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quaerat, tempora asperiores, vitae expedita ipsa quae? Esse delectus aspernatur consequuntur laboriosam! Tempora veniam natus at hic, iste, laudantium nulla accusamus.</p></div>
-					<div><i></i></div>
-				</div>
+			<div class="portfolio__Container">
+					<div class='portfolio__Cell--Text textLeft divBack'>
+						<h3>Asteroid API Project</h3>
+						<p>This project is built with JQuery using the NASA Near Earth Object reporting API. Users can input any date and the returned data will append floating asteroids in an orbit around Earth. Each asteroid contains further individual data, such as mass and distance from Earth, that can be displayed on click.</p>
+						<div class="portfolio__Cell--Icons">
+							<div>
+								<i class="devicon-gulp-plain"></i>
+								<div>
+									<p>Gulp</p>
+								</div>
+							</div>
+							<div>
+								<i class="devicon-css3-plain"></i>
+								<div>
+									<p>CSS</p>
+								</div>
+							</div>
+							<div>
+								<i class="devicon-html5-plain"></i>
+								<div>
+									<p>HTML5</p>
+								</div>
+							</div>
+							<div>
+								<i class="devicon-sass-original"></i>
+								<div>
+									<p>Sass</p>
+								</div>
+							</div>
+							<div>
+								<i class="devicon-jquery-plain-wordmark"></i>
+								<div>
+									<p>jQuery</p>
+								</div>
+							</div>
+						</div>
+							<div class="portfolio__Cell--Link">
+								<a href="http://projectfour.julianmuratori.com">LIVE DEMO</a>
+							</div>	
+					</div>	
+					<div class="portfolio__Cell--ImageContainer">
+						<img src="./public/assets/asteroid.jpg" alt="" class="portfolio__Cell--Image">
+					</div>
 			</div>
-			<div>
-				<div>
-					<img src="http://unsplash.it/400/200" alt="">
+			<div class="portfolio__Container">
+				<div class="portfolio__Cell--ImageContainer">
+					<img src="./public/assets/feels1.jpg" alt="" class="portfolio__Cell--Image">
 				</div>
 				
-				<div>
-					<div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto qui voluptatibus possimus veniam. Provident excepturi sint cupiditate cum, aliquid quia corporis fugit. Amet debitis odio tempore nam unde deserunt dignissimos.</p></div>
-					<div><i></i></div>
-				</div>
+					<div class='portfolio__Cell--Text textRight divBack'>
+						<h3>Dealing With Feelings</h3>
+						<p>A vanilla Javascript project that generates inspirational quotes based on several user inputs. The user can input how they are currently feeling, how they wish to feel, and what style of quote (ie Hallmark, funny, etc.) they are hoping will jumpstart their mood.</p>
+						<div class="portfolio__Cell--Icons">
+							<div>
+								<i class="devicon-javascript-plain"></i>
+								<div>
+									<p>Javascript</p>
+								</div>
+							</div>
+							<div>
+								<i class="devicon-css3-plain"></i>
+								<div>
+									<p>CSS3</p>
+								</div>
+							</div>
+							<div>
+								<i class="devicon-html5-plain"></i>
+								<div>
+									<p>HTML5</p>
+								</div>
+							</div>
+							<div>
+								<i class="devicon-sass-original"></i>
+								<div>
+									<p>Sass</p>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio__Cell--Link">
+							<a href="">LIVE DEMO</a>
+						</div>	
+					</div>
 			</div>
-			<div>
-				<div>
-					<img src="http://unsplash.it/400/200" alt="">
-				</div>
+			<div class="portfolio__Container">
 				
-				<div>
-					<div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium asperiores sed minima sint aliquid veniam porro, iste ipsa quo quod veritatis repellendus, consequuntur, similique soluta eveniet doloribus? Optio, distinctio, blanditiis.</p></div>
-					<div><i></i></div>
+				<div class="portfolio__Cell">
+					<div class='portfolio__Cell--Text textLeft divBack'>
+						<h3>The Joy of Painting</h3>
+						<p>An episode generator based on The Joy of Painting with Bob Ross. This web app is coded entirely in React and receives information from a custom built Firebase database. The user can select different paint details and generate a list of episodes containing said details.</p>
+						<div class="portfolio__Cell--Icons">
+							<div>
+								<i class="devicon-gulp-plain"></i>
+								<div>
+									<p>Gulp</p>
+								</div>
+							</div>
+							<div>
+								<i class="devicon-css3-plain"></i>
+								<div>
+									<p>CSS3</p>
+								</div>
+							</div>
+							<div>
+								<i class="devicon-html5-plain"></i>
+								<div>
+									<p>HTML5</p>
+								</div>
+							</div>
+							<div>
+								<i class="devicon-sass-original"></i>
+								<div>
+									<p>Sass</p>
+								</div>
+							</div>
+							<div>
+								<i class="devicon-git-plain"></i>
+								<div>
+									<p>Git</p>
+								</div>
+							</div>
+							<div>
+								<i class="devicon-react-original"></i>
+								<div>
+									<p>React</p>
+								</div>
+							</div>
+							<div>
+								<i class="devicon-nodejs-plain"></i>
+								<div>
+									<p>Node.js</p>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio__Cell--Link">
+							<a href="https://ross-e85f8.firebaseapp.com/">LIVE DEMO</a>
+						</div>	
+					</div>
+				<div class="portfolio__Cell--ImageContainer">
+					<img src="./public/assets/ross1.jpg" alt="" class="portfolio__Cell--Image">
+				</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="contactInfo">
+		<section class="contactInfo" id="Contact">
 			<div class="infoContainer">
-				<div>
+				<div class="infoContainer__Contact">
 					<ul>
 						<li>julianmuratori@gmail.com</li>
 						<li>Toronto, ON</li>
 					</ul>
 				</div>
-				<div>
-					<div><i class="fa fa-twitter" aria-hidden="true"></i>
+				<div class="infoContainer__Icons">
+					<div class="infoContainer__Icons--Icon"><a href="https://twitter.com/julian_muratori"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 </div>
-					<div><i class="fa fa-github" aria-hidden="true"></i>
+					<div class="infoContainer__Icons--Icon"><a href="https://github.com/julianmuratori"><i class="fa fa-github" aria-hidden="true"></i></a>
 </div>
-					<div><i class="fa fa-medium" aria-hidden="true"></i>
+					<div class="infoContainer__Icons--Icon"><a href="https://medium.com/@julianmuratori"><i class="fa fa-medium" aria-hidden="true"></i>
+</div></a>
+					<div class="infoContainer__Icons--Icon"><a href="https://www.linkedin.com/in/julian-muratori-a03069b9/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 </div>
-					<div><i class="fa fa-linkedin" aria-hidden="true"></i>
-</div>
-					<div><i></i></div>
 				</div>
 			</div>
 		</section>
@@ -171,5 +312,7 @@
 	</footer>
 		
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/public/script.js" type="text/javascript"></script>
 </body>
 </html>
