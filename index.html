@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Julian Muratori</title>
+	<link rel="shortcut icon" href="./public/assets/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./public/assets/favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="./public/styles/style.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab" rel="stylesheet">
@@ -13,9 +16,9 @@
 	<header>
 		<nav>
 			<ul>
-				<li><a href="#About">ABOUT</a></li>
-				<li><a href="#Work">WORK</a></li>
-				<li><a href="#Contact">CONTACT</a></li>
+				<li><a data-scroll href="#About">ABOUT</a></li>
+				<li><a data-scroll href="#Work">WORK</a></li>
+				<li><a data-scroll href="#Contact">CONTACT</a></li>
 			</ul>
 		</nav>
 		<section class="intro">
@@ -28,7 +31,7 @@
 					<h2>ABOUT ME</h2>
 					<p>Hi, I'm Julian. I'm a Front-End Web Developer and HackerYou grad based in Toronto, ON.</p>
 					<p>With a passion for collaboration and clean code, I approach every new project with an open mind and a strong, well-organized work ethic.</p>
-					<p>I love to learn new things, spread my own knowledge with others, and am a fierce believer in the idea that working cooperatively can teach me something new every day.</p>
+					<p>I love to learn new things, share my own knowledge with others, and am a fierce believer in the idea that working cooperatively can teach me something new every day.</p>
 				</div>
 				<div class="aboutMe__Photo"><img src="public/assets/coolportrait1.jpg" alt=""></div>
 			</div>
@@ -136,12 +139,12 @@
 							</div>
 							</div>
 							<div class="portfolio__Cell--Link">
-								<a href="http://projecttwo.julianmuratori.com">LIVE DEMO</a>
+								<a href="http://wearemodern.julianmuratori.com" target='_blank'>LIVE DEMO</a>
 							</div>	
 						</div>
 				
 			</div>
-			<div class="portfolio__Container">
+			<div class="portfolio__Container leftSide">
 					<div class='portfolio__Cell--Text textLeft divBack'>
 						<h3>Asteroid API Project</h3>
 						<p>This project is built with JQuery using the NASA Near Earth Object reporting API. Users can input any date and the returned data will append floating asteroids in an orbit around Earth. Each asteroid contains further individual data, such as mass and distance from Earth, that can be displayed on click.</p>
@@ -178,7 +181,7 @@
 							</div>
 						</div>
 							<div class="portfolio__Cell--Link">
-								<a href="http://projectfour.julianmuratori.com">LIVE DEMO</a>
+								<a href="http://asteroids.julianmuratori.com" target='_blank'>LIVE DEMO</a>
 							</div>	
 					</div>	
 					<div class="portfolio__Cell--ImageContainer">
@@ -220,13 +223,11 @@
 							</div>
 						</div>
 						<div class="portfolio__Cell--Link">
-							<a href="">LIVE DEMO</a>
+							<a href="http://dealingwithfeelings.julianmuratori.com" target='_blank'>LIVE DEMO</a>
 						</div>	
 					</div>
 			</div>
-			<div class="portfolio__Container">
-				
-				<div class="portfolio__Cell">
+			<!-- <div class="portfolio__Container leftSide">
 					<div class='portfolio__Cell--Text textLeft divBack'>
 						<h3>The Joy of Painting</h3>
 						<p>An episode generator based on The Joy of Painting with Bob Ross. This web app is coded entirely in React and receives information from a custom built Firebase database. The user can select different paint details and generate a list of episodes containing said details.</p>
@@ -281,26 +282,25 @@
 				<div class="portfolio__Cell--ImageContainer">
 					<img src="./public/assets/ross1.jpg" alt="" class="portfolio__Cell--Image">
 				</div>
-				</div>
-			</div>
+			</div> -->
 		</section>
 
 		<section class="contactInfo" id="Contact">
 			<div class="infoContainer">
 				<div class="infoContainer__Contact">
 					<ul>
-						<li>julianmuratori@gmail.com</li>
+						<li>julian@julianmuratori.com</li>
 						<li>Toronto, ON</li>
 					</ul>
 				</div>
 				<div class="infoContainer__Icons">
-					<div class="infoContainer__Icons--Icon"><a href="https://twitter.com/julian_muratori"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<div class="infoContainer__Icons--Icon"><a href="https://twitter.com/julian_muratori" target='_blank'><i class="fa fa-twitter" aria-hidden="true"></i></a>
 </div>
-					<div class="infoContainer__Icons--Icon"><a href="https://github.com/julianmuratori"><i class="fa fa-github" aria-hidden="true"></i></a>
+					<div class="infoContainer__Icons--Icon"><a href="https://github.com/julianmuratori" target='_blank'><i class="fa fa-github" aria-hidden="true"></i></a>
 </div>
-					<div class="infoContainer__Icons--Icon"><a href="https://medium.com/@julianmuratori"><i class="fa fa-medium" aria-hidden="true"></i>
+					<div class="infoContainer__Icons--Icon"><a href="https://medium.com/@julianmuratori" target='_blank'><i class="fa fa-medium" aria-hidden="true"></i>
 </div></a>
-					<div class="infoContainer__Icons--Icon"><a href="https://www.linkedin.com/in/julian-muratori-a03069b9/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					<div class="infoContainer__Icons--Icon"><a href="https://www.linkedin.com/in/julian-muratori-a03069b9/" target='_blank'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 </div>
 				</div>
 			</div>

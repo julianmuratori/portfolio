@@ -218,10 +218,12 @@ nav a {
   padding: 0 10px;
   background: rgba(255, 255, 255, 0); }
   .aboutMe__Text p {
-    font-size: 1.5rem; }
+    font-size: 1.7rem; }
 
 .aboutMe__Photo {
-  max-width: 400px;
+  max-width: 400px; }
+
+.aboutMe__Photo img {
   box-shadow: 0px 10px 15px 0px rgba(50, 50, 50, 0.51); }
 
 .skills {
@@ -232,7 +234,7 @@ nav a {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 50%;
+  width: 100%;
   margin: 70px auto; }
 
 .skills__Container {
@@ -247,7 +249,7 @@ nav a {
   font-family: "Roboto Slab", serif;
   margin: 10px 20px;
   padding: 5px 15px;
-  width: calc(33.3% - 40px);
+  width: calc(20% - 40px);
   background: rgba(255, 255, 255, 0);
   font-size: 1.3rem;
   color: #464646; }
@@ -277,7 +279,7 @@ nav a {
 .portfolio__Cell--Text {
   padding: 25px 10px;
   font-family: "Raleway", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin: auto 0;
   color: #464646;
   background: rgba(255, 255, 255, 0);
@@ -315,11 +317,9 @@ nav a {
   background: #fffff7;
   margin: 10px 0 0;
   padding: 10px 15px;
-  transition: all .5s; }
+  transition: all .35s; }
   .portfolio__Cell--Link a:hover {
-    background: rgba(255, 255, 255, 0);
-    color: #fffff7;
-    transform: scale(1.3); }
+    background: rgba(255, 255, 255, 0); }
 
 .infoContainer {
   display: -ms-flexbox;
@@ -330,15 +330,22 @@ nav a {
       align-items: center;
   text-align: center;
   font-family: "Roboto Slab", serif;
-  margin: 100px 0; }
+  margin: 150px 0;
+  padding: 50px 0;
+  background: #fffff7;
+  box-shadow: 0px 10px 15px 0px rgba(50, 50, 50, 0.51); }
 
 .infoContainer__Icons {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-top: 30px; }
 
-.infoContainer__Icons--Icon {
+.infoContainer__Icons--Icon a {
   padding: 10px;
-  margin: 0 5px; }
+  margin: 0 5px;
+  transition: all .5s; }
+  .infoContainer__Icons--Icon a i:hover {
+    transform: scale(1.2); }
 
 .infoContainer__Contact ul li {
   font-size: 2rem; }
@@ -349,3 +356,45 @@ nav a {
   .infoContainer__Icons--Icon a {
     text-decoration: none;
     color: #464646; }
+
+@media all and (max-width: 740px) {
+  .aboutMe {
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    -ms-flex-align: center;
+        align-items: center;
+    text-align: center; }
+  .aboutMe div {
+    padding: 30px 0;
+    width: 70%; }
+  .aboutMe__Text {
+    line-height: 2.2rem; }
+  .portfolio__Container {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center; }
+  .portfolio__Cell--ImageContainer {
+    width: 80%; }
+  .portfolio__Cell--Icons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .portfolio__Cell--Icons div {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .portfolio__Cell--Text {
+    width: 80%;
+    margin: 0; }
+    .portfolio__Cell--Text h3 {
+      font-size: 2rem; }
+    .portfolio__Cell--Text p {
+      font-size: 1.5rem; }
+  .leftSide {
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse; } }

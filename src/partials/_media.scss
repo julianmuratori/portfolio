@@ -1,0 +1,56 @@
+@media all and (max-width: 740px) {
+	.aboutMe {
+		flex-direction: column-reverse;
+		align-items: center;
+		text-align: center;
+	}
+
+	.aboutMe div {
+		padding: 30px 0;
+		width: 70%;
+	}
+
+	.aboutMe__Text {
+		line-height: 2.2rem;
+	}
+
+	.portfolio__Container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.portfolio__Cell--ImageContainer {
+		width: 80%;
+	}
+
+	.portfolio__Cell--Icons {
+		flex-wrap: wrap;
+
+		div {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	.portfolio__Cell--Text {
+		width: 80%;
+		margin: 0;
+
+		h3 {
+			font-size: 2rem;
+		}
+
+		p {
+			font-size: 1.5rem;
+		}
+		// text-align: center;
+	}
+
+	.leftSide {
+		flex-direction: column-reverse;
+	}
+
+
+}
