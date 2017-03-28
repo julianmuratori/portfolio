@@ -43,6 +43,10 @@
 	justify-content: space-around;
 }
 
+.portfolio__Cell--Icons div {
+	text-align: center;
+}
+
 .portfolio__Cell--Icons p {
 	text-align: center;
 	font-family: $fontSecondary;
@@ -59,6 +63,7 @@
 
 	p {
 		padding: 10px 0;
+		line-height: 2rem;
 	}
 
 	h3 {
@@ -113,8 +118,8 @@
 	font-family: $fontSecondary;
 	margin: 150px 0;
 	padding: 50px 0;
-	background: #fffff7;
-	box-shadow: $boxShadow;
+	// background: #fffff7;
+	// box-shadow: $boxShadow;
 }
 
 .infoContainer__Icons {
@@ -136,6 +141,8 @@
 
 .infoContainer__Contact ul li {
 	font-size: 2rem;
+	padding: 10px 0;
+	color: $fontColor;
 }
 
 .infoContainer__Icons--Icon {

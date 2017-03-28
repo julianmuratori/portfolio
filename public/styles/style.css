@@ -130,7 +130,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 html {
   font-size: 62.5%;
-  background: linear-gradient(135deg, #fffff9 0%, #c8c8dc 51%, #fffff7 99%); }
+  background: linear-gradient(135deg, #d7ebf9 0%, #c8aac8 51%, #d7ebf7 99%); }
 
 .divBack {
   background: rgba(255, 255, 255, 0.75); }
@@ -155,12 +155,10 @@ header {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
-  color: #464646; }
+  color: #46466e; }
   header img {
     width: 100%;
     display: block; }
-  header ul {
-    border-bottom: 1px solid black; }
   header h1 {
     font-size: 5.5rem; }
 
@@ -191,14 +189,17 @@ nav ul li {
 
 nav a {
   text-decoration: none;
-  color: black;
+  padding-bottom: 5px;
   font-family: "Raleway", sans-serif;
   font-size: 2rem; }
+
+nav a:hover {
+  border-bottom: 1px solid #46466e; }
 
 .myName {
   width: 100%;
   text-align: center;
-  padding: 50px 0 30px;
+  padding: 30px 0 30px;
   font-family: "Raleway", sans-serif; }
 
 .aboutMe {
@@ -218,13 +219,14 @@ nav a {
   padding: 0 10px;
   background: rgba(255, 255, 255, 0); }
   .aboutMe__Text p {
-    font-size: 1.7rem; }
+    font-size: 1.7rem;
+    line-height: 2.2rem; }
 
 .aboutMe__Photo {
   max-width: 400px; }
 
 .aboutMe__Photo img {
-  box-shadow: 0px 10px 15px 0px rgba(50, 50, 50, 0.51); }
+  box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.51); }
 
 .skills {
   padding: 30px 0;
@@ -252,7 +254,7 @@ nav a {
   width: calc(20% - 40px);
   background: rgba(255, 255, 255, 0);
   font-size: 1.3rem;
-  color: #464646; }
+  color: #46466e; }
   .skills__Container i {
     font-size: 5rem; }
 
@@ -272,6 +274,9 @@ nav a {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
+.portfolio__Cell--Icons div {
+  text-align: center; }
+
 .portfolio__Cell--Icons p {
   text-align: center;
   font-family: "Roboto Slab", serif; }
@@ -281,13 +286,14 @@ nav a {
   font-family: "Raleway", sans-serif;
   font-size: 1.5rem;
   margin: auto 0;
-  color: #464646;
+  color: #46466e;
   background: rgba(255, 255, 255, 0);
   width: calc(45% - 20px); }
   .portfolio__Cell--Text p {
-    padding: 10px 0; }
+    padding: 10px 0;
+    line-height: 2rem; }
   .portfolio__Cell--Text h3 {
-    border-bottom: 1px solid #464646; }
+    border-bottom: 1px solid #46466e; }
 
 .textLeft {
   margin-right: 20px; }
@@ -296,7 +302,7 @@ nav a {
   margin-left: 20px; }
 
 .portfolio__Cell--Image {
-  box-shadow: 0px 10px 15px 0px rgba(50, 50, 50, 0.51);
+  box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.51);
   max-width: 100%; }
 
 .portfolio__Cell--ImageContainer {
@@ -312,8 +318,8 @@ nav a {
 
 .portfolio__Cell--Link a {
   text-decoration: none;
-  box-shadow: 0px 10px 15px 0px rgba(50, 50, 50, 0.51);
-  color: #464646;
+  box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.51);
+  color: #46466e;
   background: #fffff7;
   margin: 10px 0 0;
   padding: 10px 15px;
@@ -331,9 +337,7 @@ nav a {
   text-align: center;
   font-family: "Roboto Slab", serif;
   margin: 150px 0;
-  padding: 50px 0;
-  background: #fffff7;
-  box-shadow: 0px 10px 15px 0px rgba(50, 50, 50, 0.51); }
+  padding: 50px 0; }
 
 .infoContainer__Icons {
   display: -ms-flexbox;
@@ -348,14 +352,16 @@ nav a {
     transform: scale(1.2); }
 
 .infoContainer__Contact ul li {
-  font-size: 2rem; }
+  font-size: 2rem;
+  padding: 10px 0;
+  color: #46466e; }
 
 .infoContainer__Icons--Icon {
   font-size: 4rem;
   margin: 0 15px; }
   .infoContainer__Icons--Icon a {
     text-decoration: none;
-    color: #464646; }
+    color: #46466e; }
 
 @media all and (max-width: 740px) {
   .aboutMe {
